@@ -254,6 +254,16 @@ footer h2 {
 }
 
 .fixed-nav {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.pin-nav{
     position: fixed;
     top: 0;
     left: 0;
@@ -262,6 +272,7 @@ footer h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
+
 .fixed-nav ul {
     display: flex;
     justify-content: center;

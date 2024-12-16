@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Расписание</title>
   <link rel="stylesheet" href="/htmls/styles.css">
+  <link rel="stylesheet" href="/htmls/calendar.css">
 </head>
 <body>
 <header class="header">
@@ -15,6 +16,7 @@
       <li><a href="/htmls/contact.html">Контакты</a></li>
       <li><a href="/htmls/price.html">Стоимость занятий</a></li>
       <li><a href="/htmls/schedule.html">Расписание</a></li>
+      <li><a href="/htmls/feedback.html">Отзывы</a></li>
     </ul>
   </nav>
 </header>
@@ -48,9 +50,17 @@
   </form>
 
   <div id="resultContainer"></div>
+
+  <div id="calendar-container">
+    <div id="calendar"></div>
+  </div>
+
 </main>
 
 <script src="/scripts/scheduleMaker.js"></script>
 <script src="/scripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs/dayjs.min.js"></script>
+<script src="/scripts/calendar.js"></script>
 </body>
 </html>
