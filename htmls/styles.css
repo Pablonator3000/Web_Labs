@@ -427,3 +427,63 @@ footer h2 {
     transition: background-color 0.3s ease;
 }
 
+
+#subjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Стили для опций */
+.subject-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffcc00;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+/* Скрываем стандартный checkbox */
+.subject-option input[type="checkbox"] {
+    display: none;
+}
+
+/* Псевдоэлемент для отображения кастомного чекбокса */
+.subject-option input[type="checkbox"] + span::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    background-color: black;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Состояние при наведении */
+.subject-option:hover {
+    background-color: #eaeaea;
+    border-color: #aaa;
+}
+
+/* Состояние активного чекбокса */
+.subject-option input[type="checkbox"]:checked + span::before {
+    background-color: black;
+    border-color: black;
+    content: '✔';
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
